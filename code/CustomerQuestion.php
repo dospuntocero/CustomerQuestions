@@ -47,7 +47,11 @@ class CustomerQuestion extends DataObject {
 
 			//Set data
 			$From = $this->Email;
-			$To = "fa@god.cl";
+			
+		
+			$cp = DataObject::get_one("ContactPage");
+			$To = $cp->Mailto;
+			
 			$Subject = _t('CustomerQuestion.ANSWER',"Here is your Answer!");
 			$Body = $this->Answer;
 			$email = new Email($From, $To, $Subject, $Body);
