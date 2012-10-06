@@ -42,7 +42,7 @@ class CustomerQuestion extends DataObject {
 	
 	public function onBeforeWrite(){
 		parent::onBeforeWrite();
-		if (!$this->Answered) {
+		if (!$this->Answered && !empty($this->Answer)) {
 			//Set data
 			$From = $this->Email;
 			$To = "fa@god.cl";
