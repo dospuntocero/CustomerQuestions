@@ -1,0 +1,18 @@
+es:
+  ContactEmail:
+    SUBMITTERINFO: 'El siguiente mensaje ha sido enviado a tu sitio por'
+  ContactPage:
+    CELLPHONE: Celular
+    QUESTION: '¿Qué necesitas? cuéntanos!'
+    COMMENTSINPUT: 'Comentarios <em>*</em>'
+    DESCRIPTION: 'Formulario de contacto'
+    EMAIL: 'Dirección de correo'
+    EMAILSUBMISSIONSTO: 'Enviar las consultas a'
+    NAME: 'Necesitamos tu nombre'
+    NAMEINPUT: 'Nombre <em>*</em>'
+    OURADDRESS: 'Dirección'
+    SEND: Enviar
+    CONTACT: Contacto
+    SINGULARNAME: 'Página de contacto'
+    THANKYOUTEXT: 'Texto de agradecimiento'
+    WEBSITECONTACTMESSAGE: 'Mensaje desde el sitio web'
