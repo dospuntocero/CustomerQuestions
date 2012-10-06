@@ -18,7 +18,13 @@
 					<li style="margin:5px;padding:0px;"><p><% _t('ContactEmail.SUBMITTERINFO','The following message was submitted to your site by') %> <strong>$Name</strong>:</li>
 					<li style="margin:5px;padding:0px;"><p><% _t('QuickEmailForm.QUESTION','Question') %>: $Question</p></li>
 					<li style="margin:5px;padding:0px;"><p><% _t('QuickEmailForm.EMAIL','Email') %>: $Email</p></li>
+					<li style="margin:5px;padding:0px;"><p><% _t('QuickEmailForm.EMAIL','Email') %>: 
+						<% _t('ContactEmail.ANSWERFROMCMS','<a href="admin/customer-questions/CustomerQuestion/EditForm/field/CustomerQuestion/item/$ID/edit">Answer this email directly from your cms</a> (to keep track of your answer)') %>
+						
+						</p></li>
+
 				</ul>
+				
 			</td>
 		</tr>
 	
