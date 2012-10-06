@@ -54,7 +54,9 @@ class DashboardCustomerQuestions extends DashboardPanel {
 	 * @return ArrayList
 	 */
 	public function CustomerQuestions() {
-		$records = CustomerQuestion::get()->sort("LastEdited DESC")->limit($this->Count);
+		$records = CustomerQuestion::get()->sort("LastEdited DESC")->filter(array(
+			"Answered" => "0"
+		))->limit($this->Count);
 		$set = ArrayList::create(array());
 		foreach($records as $r) {
 			$set->push(ArrayData::create(array(
