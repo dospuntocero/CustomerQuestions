@@ -31,7 +31,6 @@ class CustomerQuestion extends DataObject {
 
 
 		if ($this->Answered) {
-			$fields->addFieldToTab("Root.Main", LiteralField::create('YourAnswer',_t('CustomerQuestion.YOURANSWER',"Your Answer")));
 			$fields->addFieldToTab("Root.Main", $answer->setAttribute('readonly', true));
 		}
 		else{
