@@ -5,7 +5,7 @@
 </head>
 <body>
 
-<table width="500" style="padding:60px;padding-top:50px;" background="$BaseHREF/mysite/images/email-bg.png">
+<table width="500" style="padding:60px;padding-top:50px;" background="$BaseHREF/CustomerQuestions/images/email-bg.png">
 	<tr>
 		<td>
 			<a href="$BaseHREF"><img src="$BaseHREF/mysite/images/logo.png" width="90px"/></a><br />
