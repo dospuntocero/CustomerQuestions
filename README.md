@@ -13,6 +13,8 @@ This module requires [Silverstripe 3](http://silverstripe.org/download) and [Unc
 ## Installation ##
 Just as any other silverstripe module, drag it into the root folder, run dev/build, and you are done. In the left menu of your site you will find a "Customer Questions" section for keeping track of all of the questions clients have sent to the website.
 
+then you need to create a ContactPage and set the email you want to get the messages and the thank you message
+
 ## Usage ##
 
 With this module you'll get a simple Contact form tied to a dashboard that shows you the latest unanswered questions on your site, you can check the questions and even answer them directly from the cms without using your email program, you just write your answer in the module and it will send a branded email to your customer.
