@@ -9,13 +9,13 @@
 	<tr>
 		<td>
 			<a href="$BaseHREF"><img src="$BaseHREF/mysite/images/logo.png" width="90px"/></a><br />
-				<h1 style="font-size:16px;color:#666;margin-top:10px;"><% _t('QuickEmailForm.FROMOURWEBSITE','Contact from our website') %></h1>
+				<h1 style="font-size:16px;color:#666;margin-top:10px;"><% _t('ContactAnswer.ANSWER','Here is your Answer!') %></h1>
 		</td>	
 	</tr>
 	<tr>
 		<td>
 			<ul style="list-style:none;margin:0;margin-right:20px;padding:5px;background:#F4F4F4;">
-				<li style="margin:5px;padding:0px;"><p>$Answer</p></li>
+				<li style="margin:5px;padding:0px;"><p>$Body</p></li>
 			</ul>
 		</td>
 	</tr>
