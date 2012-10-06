@@ -1,5 +1,5 @@
 <ul class="CustomerQuestions">
-	<% if  %>
+	<% if CustomerQuestions %>
 		<% loop CustomerQuestions %>
 			<li>
 				<a href="$AnswerLink" class="ss-ui-button AnswerAction"><% _t('DashboardCustomerQuestions.ANSWER','Answer') %></a>
