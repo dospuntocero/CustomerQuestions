@@ -1,0 +1,46 @@
+en:
+  ContactAnswer:
+    ANSWER: 'Here is your Answer!'
+  ContactEmail:
+    SUBMITTERINFO: 'The following message was submitted to your site by'
+  ContactPage:
+    CELLPHONE: Cellphone
+    COMMENTS: 'What are you thinking? Tell me'
+    COMMENTSINPUT: 'Comments <em>*</em>'
+    CONTACT: Contact
+    DESCRIPTION: 'Contact form'
+    EMAIL: 'Email address'
+    EMAILSUBMISSIONSTO: 'Email submissions to'
+    NAME: 'We need your name'
+    NAMEINPUT: 'Name <em>*</em>'
+    PLURALNAME: 'Contact Pags'
+    QUESTION: 'Question <em>*</em>'
+    SEND: Send
+    SINGULARNAME: 'Contact Page'
+    THANKYOUTEXT: 'Thank you text'
+    WEBSITECONTACTMESSAGE: 'Website Contact message'
+  CustomerQuestion:
+    ANSWER: 'Here is your Answer!'
+    CELLPHONE: 'Cell Phone'
+    EMAIL: Email
+    NAME: Name
+    PLURALNAME: 'Customer Questions'
+    QUESTION: Question
+    SINGULARNAME: 'Customer Question'
+  CustomerQuestions:
+    CUSTOMERQUESTIONS: 'Customer Questions'
+    DESCRIPTION: 'Shows a linked list of recently contact forms submited to our site'
+  DashboardCustomerQuestions:
+    ANSWER: Answer
+    COUNT: 'Number of submitted forms to display'
+    PLURALNAME: 'Dashboard Customer Questionss'
+    SINGULARNAME: 'Dashboard Customer Questions'
+  QuickEmailForm:
+    EMAIL: Email
+    FROMOURWEBSITE: 'Contact from our website'
+    QUESTION: Question
+  SiteTree:
+    PLURALNAME: Pages
+    SINGULARNAME: Page
+  CustomerQuestionsAdmin:
+    MENUTITLE: 'Customer Questions'

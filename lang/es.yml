@@ -16,3 +16,46 @@ es:
     SINGULARNAME: 'Página de contacto'
     THANKYOUTEXT: 'Texto de agradecimiento'
     WEBSITECONTACTMESSAGE: 'Mensaje desde el sitio web'
+
+  ContactAnswer:
+    ANSWER: 'Aquí está tu respuesta!'
+  ContactEmail:
+    SUBMITTERINFO: 'El siguiente mensaje fue enviado a tu sitio por'
+  ContactPage:
+    CELLPHONE: Celular
+    COMMENTS: 'Qué estás pensando? cuéntanos'
+    COMMENTSINPUT: 'Pregunta <em>*</em>'
+    CONTACT: Contacto
+    DESCRIPTION: 'Formulario de contacto'
+    EMAIL: 'Email'
+    EMAILSUBMISSIONSTO: 'Enviar emails a'
+    NAME: 'Necesitamos tu nombre'
+    NAMEINPUT: 'Nombre <em>*</em>'
+    PLURALNAME: 'Páginas de contacto'
+    QUESTION: 'Pregunta <em>*</em>'
+    SEND: Enviar
+    SINGULARNAME: 'Página de contacto'
+    THANKYOUTEXT: 'El texto de agradecimiento'
+    WEBSITECONTACTMESSAGE: 'Mensaje desde el sitio web'
+  CustomerQuestion:
+    ANSWER: 'Aquí va tu respuesta!'
+    CELLPHONE: 'Celular'
+    EMAIL: Email
+    NAME: Nombre
+    PLURALNAME: 'Preguntas de los clentes'
+    QUESTION: Pregunta
+    SINGULARNAME: 'Pregunta de cliente'
+  CustomerQuestions:
+    CUSTOMERQUESTIONS: 'Preguntas de clientes'
+    DESCRIPTION: 'Muestra una lista de preguntas que han enviado a tu sitio desde el formulario de contacto y un botón para responderlas inmediatamente'
+  DashboardCustomerQuestions:
+    ANSWER: Respuesta
+    COUNT: 'Número de respuestas a mostrar'
+    PLURALNAME: 'Panel de control de preguntas enviadas al sitio'
+    SINGULARNAME: 'Panel de control de preguntas enviadas al sitio'
+  QuickEmailForm:
+    EMAIL: Email
+    FROMOURWEBSITE: 'Contacto desde nuestro sitio web'
+    QUESTION: Pregunta
+  CustomerQuestionsAdmin:
+    MENUTITLE: 'Preguntas de clientes'
