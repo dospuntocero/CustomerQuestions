@@ -1,25 +1,28 @@
 <?php
 class ContactForm_Controller extends Page_Controller {
 
-
 	function init() {
 		parent::init();
 		Requirements::css("mysite/css/Form.css");
-		Requirements::javascript(THIRDPARTY_DIR."/jquery/jquery.min.js");
-		Requirements::javascript(THIRDPARTY_DIR."/jquery-validate/jquery.validate.pack.js");
-		Requirements::javascript(THIRDPARTY_DIR."/jquery-validate/localization/messages_es.js");
-
+		Requirements::javascript("mysite/javascript/thirdparty/jquery.js");
+		Requirements::javascript("mysite/javascript/thirdparty/jquery-validate/jquery.validate.pack.js");
+		Requirements::javascript("mysite/javascript/thirdparty/jquery-validate/localization/messages_es.js");
+	
 		Requirements::customScript('
-			jQuery(document).ready(function() {
-				jQuery("#Form_ContactForm").validate({
-					rules: {
-						Name: "required",
-						Email: {
-							required: true,
+		jQuery(document).ready(function() {
+			jQuery("#Form_ContactForm").validate({
+				rules: {
+					Name: "required",
+					Email: {
+						required: true,
 							email: true
-						}
-					},
-					messages: {
+							},
+						Comments: {
+							required: true,
+								minlength: 20
+							}
+						},
+						messages: {
 						Name: "'._t("ContactPage.NAME","We need your name").'",
 						Email: "'._t("ContactPage.EMAIL","Without your real email address, we can't reach you").'",
 						Comments: "'._t("ContactPage.COMMENTS","What are you thinking? Tell me").'"
@@ -27,15 +30,16 @@ class ContactForm_Controller extends Page_Controller {
 				});
 			});
 		');
-	}	
-
+	}
+	
 	function ContactForm() {
 	// Create fields
 		$fields = new FieldList(
 			TextField::create('Name')->setTitle(_t('ContactPage.NAMEINPUT',"Name <em>*</em>")),
 			TextField::create("Cellphone")->setTitle(_t('ContactPage.CELLPHONE',"Cellphone")),
 			EmailField::create("Email")->setTitle(_t('ContactPage.EMAIL',"Email address"))->setAttribute('type', 'email'),
-			TextField::create("Comments")->setTitle(_t('ContactPage.COMMENTSINPUT',"Comments <em>*</em>"))->setMaxLength(50)
+      TextareaField::create("Question")->setTitle(_t('ContactPage.QUESTION',"Question <em>*</em>"))
+
 		);
 
 		// Create action
@@ -45,24 +49,30 @@ class ContactForm_Controller extends Page_Controller {
 		$actions = new FieldList(
 			$send
 		);
-	// Create action
-		$validator = new RequiredFields('Name', 'Email', 'Comments');
+		// Create action
+		$validator = new RequiredFields('Name', 'Email', 'Question');
 		return new Form($this, 'ContactForm', $fields, $actions, $validator);
 	}
+ 
+	function SendContactForm($data, $form) {
+		//saves the question in the database
+		$CustomerQuestion = new CustomerQuestion();
+		$form->saveInto($CustomerQuestion);
+		$CustomerQuestion->write();
+		$cp = DataObject::get_one("ContactPage");
 
-	function SendContactForm($data) {
-
-		$cp = SiteConfig::current_site_config();
-
-		//Set data
+		//Sets data
 		$From = $data['Email'];
 		$To = $cp->Mailto;
-		$Subject = _t('ContactPage.WEBSITECONTACTMESSAGE',"Website Contact message");  	  
+		$Subject = _t('ContactPage.WEBSITECONTACTMESSAGE',"Website Contact message");
 		$email = new Email($From, $To, $Subject);
 		//set template
 		$email->setTemplate('ContactEmail');
 		//populate template
-		$email->populateTemplate($data);
+		$email->populateTemplate(array(
+			"ID" => "$CustomerQuestion->ID",
+			$data
+		));
 		//send mail
 		if ($email->send()) {
 			Controller::curr()->redirect(Director::baseURL(). $this->URLSegment . "/success");
@@ -70,7 +80,6 @@ class ContactForm_Controller extends Page_Controller {
 			Controller::curr()->redirect(Director::baseURL(). $this->URLSegment . "/error");
 		}
 	}
-
 
 	public function error(){
 		return $this->httpError(500);
@@ -80,5 +89,4 @@ class ContactForm_Controller extends Page_Controller {
 		$renderedContent = $this->renderWith('Page', array('Content' => $this->SubmitText));
 		return $renderedContent;
 	}
-
 }
