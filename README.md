@@ -8,14 +8,14 @@ This is a module for storing those emails as dataobjects with the ability to ans
 
 ## Requirements ##
 
-This module requires Silverstripe 3 and UncleCheese's dashboard module
+This module requires [Silverstripe 3](http://silverstripe.org/download) and [UncleCheese's dashboard module](https://github.com/unclecheese/silverstripe-dashboard)
 
 ## Installation ##
-Just as any other silverstripe module, drag it into the root folder, run dev/build, and you are done. In the left menu of your site you will find an "Articles" section for adding/editing Article Objects.
+Just as any other silverstripe module, drag it into the root folder, run dev/build, and you are done. In the left menu of your site you will find a "Customer Questions" section for keeping track of all of the questions clients have sent to the website.
 
 ## Usage ##
 
-With this module you get a simple Contact form tied to a dashboard that shows you the latest unanswered questions on your site, you can check the questions and even answer them directly from the cms without using your email program, you just write your answer in the module and it will send a branded email to your customer.
+With this module you'll get a simple Contact form tied to a dashboard that shows you the latest unanswered questions on your site, you can check the questions and even answer them directly from the cms without using your email program, you just write your answer in the module and it will send a branded email to your customer.
 
 You also have a nice admin to review all the questions other clients have asked historically.
 
@@ -30,7 +30,7 @@ francisco arenas (fa@dospuntocero.cl)
 ## Amazing coders ##
 
 UncleCheese - without him this module wont exists
-
+º
 ## License ##
 Do what you want with it, I'm happy that you can use this small module, and if you use it, just let me know and if you can improve it, just sent me a pull request :)
 
