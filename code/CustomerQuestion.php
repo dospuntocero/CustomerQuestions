@@ -36,6 +36,8 @@ class CustomerQuestion extends DataObject {
 		else{
 			$fields->addFieldToTab("Root.Main", $answer);
 		}
+		
+		$this->extend('updateCMSFields', $fields);
 		return $fields;
 	}
 	
