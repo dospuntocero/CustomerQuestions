@@ -1,8 +1,10 @@
 #Customer Questions
 
-##Overview
+##Want to keep track of all the questions clients asks in your website?
 
-This is a simple module for adding dataobject as pages functionality on silverstripe 3, can be used for news, products or anything you can think of that doesnt need to appear in the sitetree. If you have an object that you will create more than 20, i believe that this module is better than using Pages, because of the way the sitetree works and maybe because of performance (large sitetree its slower than a datalist).
+The best way is to answer directly on it!
+
+This is a module for storing those emails as dataobjects with the ability to answer those directly in the module. The client will get a branded email from your website and you will keep record of all emails ever received. What a great deal! isn't it?
 
 ## Requirements ##
 
@@ -13,7 +15,8 @@ Just as any other silverstripe module, drag it into the root folder, run dev/bui
 
 ## Usage ##
 
-With this module you get a simple Contact form tied to a dashboard that shows you the latest unanswered questions on your site, you can check the questions and even answer them directly from the cms without using your email program. 
+With this module you get a simple Contact form tied to a dashboard that shows you the latest unanswered questions on your site, you can check the questions and even answer them directly from the cms without using your email program, you just write your answer in the module and it will send a branded email to your customer.
+
 You also have a nice admin to review all the questions other clients have asked historically.
 
 I hope you enjoy it. [Like us in facebook for more exiting modules!](https://www.facebook.com/dospuntocero.cl)
