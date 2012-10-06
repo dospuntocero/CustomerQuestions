@@ -41,7 +41,7 @@ class CustomerQuestion extends DataObject {
 	}
 	
 	public function onBeforeWrite(){
-		
+		parent::onBeforeWrite();
 		if (!$this->Answered) {
 			//Set data
 			$From = $this->Email;
