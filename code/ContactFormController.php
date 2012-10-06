@@ -71,7 +71,7 @@ class ContactForm_Controller extends Page_Controller {
 		$email->setTemplate('ContactEmail');
 		//populate template
 		$email->populateTemplate(array(
-			"ID" => $CustomerQuestion->ID,
+			"CustomerQuestionID" => $CustomerQuestion->ID,
 			"Name" => $data["Name"],
 			"Cellphone" => $data["Cellphone"],
 			"Email" => $data["Email"],
