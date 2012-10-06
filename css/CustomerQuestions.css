@@ -5,3 +5,7 @@
 .AnswerAction{
 	float: right;
 }
+
+.question{
+	overflow: hidden;
+}

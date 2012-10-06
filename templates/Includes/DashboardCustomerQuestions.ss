@@ -3,7 +3,9 @@
 		<% loop CustomerQuestions %>
 			<li>
 				<a href="$AnswerLink" class="ss-ui-button AnswerAction"><% _t('DashboardCustomerQuestions.ANSWER','Answer') %></a>
-				$Title
+				<div class="question">
+					$Title
+				</div>
 			</li>
 		<% end_loop %>	
 	<% else %>
