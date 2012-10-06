@@ -21,7 +21,7 @@
 					<li style="margin:5px;padding:0px;">
 						<p>
 							<a href="admin/customer-questions/CustomerQuestion/EditForm/field/CustomerQuestion/item/{$CustomerQuestionID}/edit">
-								<% _t('ContactEmail.ANSWERFROMCMS','Answer this email directly from your cms (to keep track of your answer)') %>
+								<% _t('ContactEmail.ANSWERFROMCMS','Answer this email directly from your cms <br />(to keep track of your answer)') %>
 							</a>
 						</p>
 					</li>

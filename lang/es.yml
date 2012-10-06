@@ -21,7 +21,7 @@ es:
     ANSWER: 'Aquí está tu respuesta!'
   ContactEmail:
     SUBMITTERINFO: 'El siguiente mensaje fue enviado a tu sitio por'
-    ANSWERFROMCMS: <a href="admin/customer-questions/CustomerQuestion/EditForm/field/CustomerQuestion/item/$ID/edit">Responder directamente desde el CMS</a> (para guardar en nuestro sitio las respuestas)
+    ANSWERFROMCMS: Responder directamente desde el CMS <br/> (para guardar en nuestro sitio las respuestas)
   ContactPage:
     CELLPHONE: Celular
     COMMENTS: 'Qué estás pensando? cuéntanos'
