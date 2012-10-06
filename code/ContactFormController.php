@@ -59,6 +59,7 @@ class ContactForm_Controller extends Page_Controller {
 		$CustomerQuestion = new CustomerQuestion();
 		$form->saveInto($CustomerQuestion);
 		$CustomerQuestion->write();
+		
 		$cp = DataObject::get_one("ContactPage");
 
 		//Sets data
@@ -71,7 +72,10 @@ class ContactForm_Controller extends Page_Controller {
 		//populate template
 		$email->populateTemplate(array(
 			"ID" => "$CustomerQuestion->ID",
-			$data
+			"Name" => $data["Name"],
+			"Cellphone" => $data["Cellphone"],
+			"Email" => $data["Email"],
+			"Question" => $data["Question"]
 		));
 		//send mail
 		if ($email->send()) {
