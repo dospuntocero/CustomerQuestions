@@ -39,8 +39,8 @@ class ContactForm_Controller extends Page_Controller {
 			TextField::create("Cellphone")->setTitle(_t('ContactPage.CELLPHONE',"Cellphone")),
 			EmailField::create("Email")->setTitle(_t('ContactPage.EMAIL',"Email address"))->setAttribute('type', 'email'),
       TextareaField::create("Question")->setTitle(_t('ContactPage.QUESTION',"Question <em>*</em>"))
-
 		);
+		$this->extend('updateContactForm', $fields);
 
 		// Create action
 		$send = new FormAction('SendContactForm', _t('ContactPage.SEND',"Send"));
