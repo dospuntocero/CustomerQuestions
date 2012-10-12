@@ -47,8 +47,8 @@ es:
     QUESTION: Pregunta
     SINGULARNAME: 'Pregunta de cliente'
   CustomerQuestions:
-    CUSTOMERQUESTIONS: 'Preguntas de clientes'
-    DESCRIPTION: 'Muestra una lista de preguntas que han enviado a tu sitio desde el formulario de contacto y un botón para responderlas inmediatamente'
+    CUSTOMERQUESTIONS: 'Preguntas'
+    DESCRIPTION: 'Consultas desde el formulario de contacto'
   DashboardCustomerQuestions:
     ANSWER: Respuesta
     COUNT: 'Número de respuestas a mostrar'
@@ -59,4 +59,4 @@ es:
     FROMOURWEBSITE: 'Contacto desde nuestro sitio web'
     QUESTION: Pregunta
   CustomerQuestionsAdmin:
-    MENUTITLE: 'Preguntas de clientes'
+    MENUTITLE: 'Preguntas'

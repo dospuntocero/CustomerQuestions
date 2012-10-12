@@ -6,7 +6,6 @@ en:
   ContactPage:
     CELLPHONE: Cellphone
     COMMENTS: 'What are you thinking? Tell me'
-    COMMENTSINPUT: 'Comments <em>*</em>'
     CONTACT: Contact
     DESCRIPTION: 'Contact form'
     EMAIL: 'Email address'
