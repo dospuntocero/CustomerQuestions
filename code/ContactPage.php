@@ -5,9 +5,9 @@
 class ContactPage extends Page
 {
 
-	static $icon = "dospuntoceroCMS/images/email.png";    
+	static $icon = "CustomerQuestions/images/email.png";    
 	static $description = 'Contact form';
-    
+	static $allow_children = false;
 	static $db = array(
 		'Mailto' => 'Varchar(100)', //Email address where submissions will go
 		'SubmitText' => 'HTMLText' //Text presented OnAfterSubmit

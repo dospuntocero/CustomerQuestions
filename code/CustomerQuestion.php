@@ -46,11 +46,8 @@ class CustomerQuestion extends DataObject {
 		parent::onBeforeWrite();
 		// if this 2 conditions are met i know the user is inside the CMS and can answer the question
 		if (!$this->Answered && !empty($this->Answer)) {
-
 			//Set data
 			$From = $this->Email;
-			
-		
 			$cp = DataObject::get_one("ContactPage");
 			$To = $cp->Mailto;
 			
