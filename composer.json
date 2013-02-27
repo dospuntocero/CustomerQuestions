@@ -1,0 +1,39 @@
+{
+
+    "name": "dospuntocero/customerquestions",
+
+    "description": "This is a module for storing those emails as dataobjects with the ability to answer those directly in the module. The client will get a branded email from your website and you will keep record of all emails ever received. What a great deal! isn't it?",
+
+    "type": "silverstripe-module",
+
+    "keywords": ["silverstripe", "contact form", "dashboard"],
+
+        "license": "BSD-3-Clause",
+
+        "authors": [
+
+        {
+
+            "name": "Dospuntocero",
+
+            "email": "fa@dospuntocero.cl"
+
+        }
+
+    ]
+
+    "require":
+
+    {
+
+        "silverstripe/framework": "3.*",
+
+        "silverstripe/cms": "3.*",
+
+        "silverstripe/dashboard": "dev-master"
+
+    },
+
+    "version": "1.0.0"    
+
+}
